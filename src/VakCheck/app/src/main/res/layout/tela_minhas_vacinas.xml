@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/id_voltar_cadastro_vacina"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="54dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/voltar" />
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="92dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vakcheck_logo" />
+
+    <TextView
+        android:id="@+id/txt_registro_vacinacao"
+        android:layout_width="323dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="151dp"
+        android:gravity="center"
+        android:text="MINHAS VACINAS"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="365dp"
+        android:layout_height="334dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_excluir_vacina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_registro_vacinacao"
+        app:srcCompat="@drawable/rectangle" />
+
+    <TextView
+        android:id="@+id/txt_vacinas"
+        android:layout_width="75dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="28dp"
+        android:text="VACINAS"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/cbox_covid1"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/txt_cod"
+        android:layout_width="37dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="28dp"
+        android:text="CÓD"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/txt_cod_vac"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/txt_data"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="37dp"
+        android:text="DATA"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/container_vacina"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/container_vacina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/txt_vacinas"
+        app:srcCompat="@drawable/tela_vacina" />
+
+    <ImageView
+        android:id="@+id/container_vacina2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/cbox_covid1"
+        app:srcCompat="@drawable/tela_vacina" />
+
+    <ImageView
+        android:id="@+id/container_vacina3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:srcCompat="@drawable/tela_vacina" />
+
+    <TextView
+        android:id="@+id/txt_data_vacina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:text="16/03/2020"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_cod_vac"
+        app:layout_constraintTop_toTopOf="@+id/container_vacina" />
+
+    <TextView
+        android:id="@+id/txt_data_vacina2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="7dp"
+        android:text="16/03/2020"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_cod_vac2"
+        app:layout_constraintTop_toTopOf="@+id/container_vacina2" />
+
+    <TextView
+        android:id="@+id/txt_data_vacina3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="9dp"
+        android:text="16/03/2020"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/container_vacina3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_cod_vac3" />
+
+    <TextView
+        android:id="@+id/txt_cod_vac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="01999560"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txt_data_vacina"
+        app:layout_constraintStart_toEndOf="@+id/cbox_covid1"
+        app:layout_constraintTop_toTopOf="@+id/container_vacina" />
+
+    <TextView
+        android:id="@+id/txt_cod_vac2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
+        android:text="01999560"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toStartOf="@+id/txt_data_vacina2"
+        app:layout_constraintStart_toEndOf="@+id/cbox_covid"
+        app:layout_constraintTop_toTopOf="@+id/container_vacina2" />
+
+    <TextView
+        android:id="@+id/txt_cod_vac3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="9dp"
+        android:text="01999560"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/container_vacina3"
+        app:layout_constraintEnd_toStartOf="@+id/txt_data_vacina3"
+        app:layout_constraintStart_toEndOf="@+id/cbox_covid2" />
+
+    <CheckBox
+        android:id="@+id/cbox_covid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:text="Covid 19"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toStartOf="@+id/txt_cod_vac"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/container_vacina" />
+
+    <CheckBox
+        android:id="@+id/cbox_covid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="Covid 19"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/container_vacina2"
+        app:layout_constraintEnd_toStartOf="@+id/txt_cod_vac2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbox_covid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="Covid 19"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/container_vacina3"
+        app:layout_constraintEnd_toStartOf="@+id/txt_cod_vac3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_excluir_vacina"
+        android:layout_width="251dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="140dp"
+        android:backgroundTint="#16BF9F"
+        android:text="EXCLUIR VACINA"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_logo"
+        app:layout_constraintStart_toEndOf="@+id/cbox_covid1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

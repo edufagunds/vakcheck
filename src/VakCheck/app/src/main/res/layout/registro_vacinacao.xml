@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/id_voltar_cadastro"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:srcCompat="@drawable/voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="54dp" />
+
+    <ImageView
+        android:id="@+id/img_logo_registro_vacinacao"
+        android:layout_width="92dp"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/vakcheck_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:id="@+id/txt_registro_vacinacao"
+        android:layout_width="160dp"
+        android:layout_height="76dp"
+        android:text="REGISTRO DE\n VACINAÇÃO"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="151dp" />
+
+    <TextView
+        android:id="@+id/txt_nome_vacina"
+        android:layout_width="147dp"
+        android:layout_height="20dp"
+        android:text="NOME DA VACINA:"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/id_voltar_cadastro"
+        app:layout_constraintStart_toEndOf="@+id/id_voltar_cadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="147dp"
+        android:layout_marginStart="-270dp" />
+
+    <EditText
+        android:id="@+id/txt_caixa_nome"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:background="@drawable/border_background"
+        android:inputType="text"
+        android:importantForAccessibility="no"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nome_vacina"
+        app:layout_constraintStart_toEndOf="@+id/id_voltar_cadastro"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="-55dp" />
+
+    <TextView
+        android:id="@+id/txt_codigo_vacina"
+        android:layout_width="165dp"
+        android:layout_height="20dp"
+        android:text="CÓDIGO DA VACINA:"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nome_vacina"
+        app:layout_constraintStart_toEndOf="@+id/id_voltar_cadastro"
+        android:layout_marginTop="79dp"
+        android:layout_marginStart="-55dp" />
+
+    <EditText
+        android:id="@+id/txt_caixa_codigo_vacina"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:background="@drawable/border_background"
+        android:inputType="text"
+        android:importantForAccessibility="no"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nome_vacina"
+        app:layout_constraintStart_toEndOf="@+id/id_voltar_cadastro"
+        android:layout_marginTop="102dp"
+        android:layout_marginStart="-55dp"/>
+
+    <TextView
+        android:id="@+id/txt_data_aplicacao"
+        android:layout_width="148dp"
+        android:layout_height="20dp"
+        android:text="DATA APLICAÇÃO:"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nome_vacina"
+        app:layout_constraintStart_toEndOf="@+id/id_voltar_cadastro"
+        android:layout_marginTop="170dp"
+        android:layout_marginStart="-55dp" />
+
+    <EditText
+        android:id="@+id/id_caixa_data_aplicacao"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:background="@drawable/border_background"
+        android:inputType="text"
+        android:importantForAccessibility="no"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nome_vacina"
+        app:layout_constraintStart_toEndOf="@+id/id_voltar_cadastro"
+        android:layout_marginTop="192dp"
+        android:layout_marginStart="-55dp" />
+
+    <Button
+        android:id="@+id/btn_registrar_vacinacao"
+        android:layout_width="212.38dp"
+        android:layout_height="60dp"
+        android:text="REGISTRAR VACINAÇÃO"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:backgroundTint="#16bf9f"
+        app:cornerRadius="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_registro_vacinacao"
+        app:layout_constraintStart_toStartOf="@+id/txt_registro_vacinacao"
+        android:layout_marginTop="354dp"
+        android:layout_marginStart="-25dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

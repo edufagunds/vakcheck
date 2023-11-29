@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".telaInicio">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="275.24dp"
+        android:layout_height="327.57dp"
+        app:srcCompat="@drawable/vakcheck_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sou_cliente_inicio"
+        android:layout_marginTop="94dp"/>
+
+    <Button
+        android:id="@+id/btn_sou_cliente_inicio"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="96.43dp"
+        android:backgroundTint="#16BF9f"
+        android:text="SOU CLIENTE"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn_quero_ser_cliente_inicio"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#333333"
+        android:text="QUERO SER CLIENTE"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:cornerRadius="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sou_cliente_inicio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/id_conheca_nos_inicio"
+        android:layout_width="389dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#00D1FF"
+        android:text="CONHEÇA-NOS"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_quero_ser_cliente_inicio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

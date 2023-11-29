@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_logo_registro"
+        android:layout_width="181dp"
+        android:layout_height="216dp"
+        app:srcCompat="@drawable/vakcheck_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="11dp"/>
+
+    <Button
+        android:id="@+id/id_registro_vacinacao"
+        android:layout_width="251dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#16bf9f"
+        android:importantForAccessibility="no"
+        android:text="REGISTRAR\nVACINAÇÃO"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo_registro" />
+
+    <Button
+        android:id="@+id/id_minhas_vacinas"
+        android:layout_width="251dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#00d1ff"
+        android:text="MINHAS VACINAS"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:cornerRadius="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/id_registro_vacinacao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/id_proximas_doses"
+        android:layout_width="251dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#00d1ff"
+        android:text="PRÓXIMAS DOSES"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:cornerRadius="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/id_minhas_vacinas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/id_minha_conta"
+        android:layout_width="251dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#979797"
+        android:text="MINHA CONTA"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:cornerRadius="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/id_proximas_doses"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
