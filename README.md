@@ -2,6 +2,8 @@
 
 # VAKCHECK
 
+API utilizada para testes: Pixel 3a API 34_extension_Level_7_x86_64
+
 RM: 97195
 Nome: Eduardo Fagundes Correa
 
